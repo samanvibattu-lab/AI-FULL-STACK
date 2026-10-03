@@ -4,6 +4,13 @@ from ollama import chat
 from sentence_transformers import SentenceTransformer
 
 st.set_page_config(page_title="Technova Concierge", page_icon=".", layout="wide")
+st.markdown("""
+<style>
+.stApp{
+background-color : #5D100A
+}
+</style>
+""")
 
 system_msg = "You are Nova, a friendly and helpful bot with knowledge about Technova fest. Answer only with the context provided. If the answer is not in the context,say that you don't know. Keep the answers short."
 
